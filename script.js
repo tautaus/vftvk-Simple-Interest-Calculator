@@ -22,7 +22,8 @@ function getSliderValue() {
 //Check for non_negative values
 function validateAmount() {
     var principal = document.getElementById("principal").value;
-    if (parseInt(principal) <= 0) 
+    var isPositive = parseInt(principal) > 0;
+    if (!isPositive) 
     {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
