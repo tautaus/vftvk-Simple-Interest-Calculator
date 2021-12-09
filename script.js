@@ -22,9 +22,9 @@ function getSliderValue() {
 //Check for non_negative values
 function validateAmount() {
     var principal = document.getElementById("principal").value;
-    if (parseInt(principal) < 0) 
+    if (parseInt(principal) <= 0) 
     {
-        alert("Enter a non-negative number");
+        alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
     }
